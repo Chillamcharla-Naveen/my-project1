@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(209, 216, 214);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}/* 1. Reset default margin and set a font for the body */
+
+/* 2. Style the header to make it fixed at the top, full width, with a background color */
+header {
+    width: 100%; /* Make the header full width */
+    background-color: #333; /* Set a dark background color */
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0; /* Align the header to the top */
+    left: 0; /* Align the header to the left */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align child items (nav) to the right */
+    align-items: center;
+    padding: 10px 20px; /* Add padding inside the header */
+    box-shadow: 0 2px 4px rgba(33, 33, 33, 0.1); /* Add a subtle shadow for depth */
+    white-space: nowrap;
+    z-index: 100; /* Ensure header stays on top */
+}
+h2{
+    color:aliceblue;
+}
+
+/* 3. Style the navbar container */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align child items (ul) to the right */
+    align-items: center; /* Vertically center child items */
+    width: 100%; /* Make the navbar full width within the header */
+}
+
+/* 4. Style the unordered list to remove default styling and align items horizontally */
+.nav-links {
+    list-style: none; /* Remove default list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a row */
+}
+
+/* 5. Style each list item */
+.nav-links li {
+    margin: 0 10px; /* Add horizontal space between list items */
+}
+
+/* 6. Style the links */
+.nav-links a {
+    text-decoration: none; /* Remove the default underline from links */
+    color: white; /* Set the text color to white */
+    padding: 10px 15px; /* Add padding inside the links */
+    border-radius: 5px; /* Round the corners slightly */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* 7. Add a hover effect for the links */
+.nav-links a:hover {
+    background-color: #575757; /* Change background color on hover */
+}
+main{
+    padding: 15%;
+}
+.image1{
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width */
+    height: 1000; /* Maintain aspect ratio */
+    border: 5px solid #333; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    
+}
+.header-right {
+    float: right;
+  }
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+.s1{
+    text-align: left;
+}
+.s2{
+    background: scroll;
+}
